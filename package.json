@@ -1,0 +1,35 @@
+{ "name": "cli-args-parse-dashdash-2402-pmb",
+  "version": "1.0.0",
+  "description": "Yet another arguments parser. Similar to minimist but --optname yields { optname: true } rather than eating the next argument.",
+  "keywords": [
+    "arguments",
+    "cli",
+    "options"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/cli-args-parse-dashdash-2402-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/cli-args-parse-dashdash-2402-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/cli-args-parse-dashdash-2402-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "scripts": { "test": "jsl && nodejs test/all.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+    "p-fatal": "^0.1.5",
+    "p-tape": "^4.0.2",
+    "usnam-pmb": "^0.2.5"
+  },
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
+}
