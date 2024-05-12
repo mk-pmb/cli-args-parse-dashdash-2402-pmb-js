@@ -4,8 +4,13 @@
 'use strict';
 
 var EX = function parseArgsDashDash(input) {
-  var opt = {}, list = [opt], k, v;
+  var opt = {}, list = [opt], k, v, raw;
   input.forEach(function each(arg) {
+    if (raw) { return list.push(arg); }
+    if (arg === '--') {
+      raw = true;
+      return;
+    }
     if (arg.slice(0, 2) === '--') {
       k = arg.slice(2);
       k = (EX.splitOnce('=', k) || [k, true]);

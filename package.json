@@ -1,5 +1,5 @@
 { "name": "cli-args-parse-dashdash-2402-pmb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yet another arguments parser. Similar to minimist but --optname yields { optname: true } rather than eating the next argument.",
   "keywords": [
     "arguments",

@@ -6,8 +6,28 @@
 var assert = require('assert'), eq = assert.deepStrictEqual,
   parseArgs = require('../index.js');
 
-eq(parseArgs(['say', '--exclaim', '--append-word=world', 'hello']),
-  [{ append_word: 'world', exclaim: true }, 'say', 'hello']);
+eq(parseArgs([
+  'say',
+  '--exclaim',
+  '--append-word=world',
+  '--===',
+  '--',
+  'hello',
+  '--bold',
+  '--',
+  '--italic',
+]), [
+  {
+    append_word: 'world',
+    exclaim: true,
+    '': '==',
+  },
+  'say',
+  'hello',
+  '--bold',
+  '--',
+  '--italic',
+]);
 
 
 
